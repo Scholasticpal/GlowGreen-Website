@@ -22,8 +22,6 @@ def gen_frames():
             image_np = visualize(image_np, detections)
             # cv2.imshow("SALUCHAN",cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
             frame = cv2.imencode('.jpg', image_np)[1]
-
-            # print(b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
             yield b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame.tobytes() + b'\r\n'
 
             cv2.waitKey(1)
@@ -32,8 +30,6 @@ def gen_frames():
             print(e)
             break
     cap.release()
-
-
 cv2.destroyAllWindows()
 
 gen_frames()
