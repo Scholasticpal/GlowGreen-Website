@@ -1,5 +1,46 @@
+.mytitle{
+  padding: 0% 4% 0%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  padding: 1rem 1rem;
+  /* padding-top: 2%;
+  padding-bottom: 2%; */
+  margin: 0;
+  background-color: #2F7D6D;
+}
+
+.nav-fixed{
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+width: 100%;
+height: 50px;
+background-color: #2F7D6D;
+}
+/* navigation-bar*/
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
  .u-section-1 {
   background-image: none;
+  padding-bottom: 10%;
+  padding-top: 3%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -37,7 +78,7 @@
 .u-section-1 .u-image-1 {
   width: 197px;
   height: 197px;
-  background-image: url("images/WhatsAppImage2022-03-30at8.32.18PM.jpeg");
+  background-image: url("images/WhatsAppImage2022-03-31at5.22.18PM_cleanup1.jpeg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
