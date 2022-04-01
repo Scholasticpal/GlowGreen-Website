@@ -16,7 +16,7 @@
 
 .desc_img{
 
-  height: 615px;
+  height: 625px;
   max-width: 100%;
 }
 
@@ -24,7 +24,7 @@
   padding: 0%;
 }
 .container-fluid {
-  padding: 3% 0% 0%; /* top right bottom left */
+  padding: 0% 0% 0%; // top right bottom left
 }
 
 h1 {
@@ -44,14 +44,28 @@ h2{
 
 body {
   font-family: 'Montserrat', sans-serif;
+
+
 }
 
 
 
 .navbar {
-  padding: 0 0 2rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 0;
+  background-color: #2F7D6D;
 }
 
+.nav-fixed{
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+width: 100%;
+height: 50px;
+background-color: #2F7D6D;
+}
 /* navigation-bar*/
 .navbar-brand {
   font-family: "Ubuntu";
@@ -85,7 +99,7 @@ body {
 /* features */
 #features {
   position: relative;
-  background-color: white;
+  background-color: #F16C25;
   text-align: center;
   padding: 7% 15%;
 }
@@ -95,16 +109,16 @@ body {
 }
 
 .features-img {
-  color: #F6BA4E;
+  color: #15396A;
   padding-bottom: 3%;
 }
 
 .features-img:hover {
-  color: #F16C25;
+  color: #F6BA4E ;
 }
 
 .features-title {
-  color: black;
+  color: white;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 1.5rem;
@@ -112,16 +126,10 @@ body {
 }
 
 .features-details {
-  color: #8f8f8f;
+  color: white;
 }
 
 /* Testimonial Section */
-
-#testimonials{
-  text-align: center;
-  background-color: #ef8172;
-  color: #fff;
-}
 
 .testimonials-img{
   width: 10%;
@@ -130,7 +138,7 @@ body {
 }
 
 #press{
-  background-color: #ef8172;
+  background-color: #fdf2e9;
   text-align: center;
   padding-bottom: 3%;
 }
@@ -143,12 +151,37 @@ body {
 /* Pricing Section */
 
 #pricing {
-  padding: 100px;
+  padding: 0;
 }
 
+.model_des{
+  background-color: #15396A;
+  text-align: center;
+  padding: 3rem;
+}
+
+.model_des_title{
+
+font-family: "Montserrat";
+font-weight: 500;
+font-size: 3rem;
+color: #F6BA4E;
+}
+
+.model_des_text{
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.model_img{
+    text-align: center;
+    background-color: #2F7D6D;
+}
 .pricing-column{
   padding: 3% 2%;
   text-align: center;
+
 }
 
 @media (max-width: 1028px){
