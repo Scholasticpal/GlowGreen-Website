@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GlowGreen</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/8ae732e432.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+      <!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+
+  <a class="navbar-brand mytitle" href="">
+    <img src="" alt="brand">
+    GlowGreen</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/meetourteam">
+          Meet Our Team
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/ourmission">
+          Our Mission
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contactus">
+          Contact Us
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section id="title">
+
+  <div class="container-fluid">
+
+
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6 descrip_txt">
+          <h1>Is your tree healthy?</h1>
+          <h1> Let us help you find out.</h1>
+          <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-solid fa-images"></i> Insert Image</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-solid fa-gears"></i> Insert Image</button> -->
+
+          <a href="/inference"><button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-regular fa-clock" ></i> Real Time Inference</button></a>
+          <a href="https://share.streamlit.io/hemanthsai7/singleinference-1/main/app.py" target="_blank">
+            <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-solid fa-images"></i> Insert Image</button>
+          </a>
+        </div>
+        <div class="col-lg-6 descrip_img">
+
+
+          <!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1000" data-pause="hover">
+            <div class="carousel-inner">
+              <div class=" carousel-item active" id="carousel_pad">
+                <img class=" d-block w-100 desc_img" src="web_images/test1.png" alt="test1">
+              </div>
+              <div class="carousel-item" id="carousel_pad">
+                <img class="d-block w-100  desc_img" src="web_images/test2.png" alt="test2">
+              </div>
+              <div class="carousel-item" id="carousel_pad">
+                <img class="d-block w-100" src="..." alt="Third slide">
+              </div>
+            </div>
+          </div>-->
+
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel_pad">
+                <img class=" d-block w-100 desc_img" src="{{url_for('static', filename='images/Page1.png')}}" alt="Page1">
+              </div>
+              <div class="carousel-item" id="carousel_pad">
+                <img class="d-block w-100  desc_img" src="{{url_for('static', filename='images/Page2.png')}}" alt="Page2">
+              </div>
+              <div class="carousel-item" id="carousel_pad">
+                <img class="d-block w-100 desc_img" src="{{url_for('static', filename='images/Page3.png')}}" alt="Page3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--      <div class="elementor-element elementor-element-5fa943b elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="5fa943b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="button.default">
+      				<div class="elementor-widget-container">
+      					<div class="elementor-button-wrapper">
+      			<a href="#" class="elementor-button-link elementor-button elementor-size-lg" role="button">
+      						<span class="elementor-button-content-wrapper">
+      						<span class="elementor-button-icon elementor-align-icon-right">
+      				<i aria-hidden="true" class="fas fa-arrow-down"></i>			</span>
+      						<span class="elementor-button-text">SCROLL</span>
+      		</span>
+      					</a>
+      		</div>
+      				</div>
+            </div> -->
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="col-lg-4 features-desc">
+        <i class="fas fa-check-circle fa-4x features-img"></i>
+        <h3 class="features-title"> Easy to use.</h3>
+        <p class="features-details">Simple Design with High Functionalities</p>
+      </div>
+      <div class="col-lg-4 features-desc">
+        <i class="fas fa-bullseye fa-4x features-img"></i>
+        <h3 class="features-title">Highly Accurate</h3>
+        <p class="features-details">Increased Accuracy and optimized Model</p>
+      </div>
+
+      <div class="col-lg-4 features-desc">
+        <i class="fas fa-heart fa-4x features-img"></i>
+        <h3 class="features-title">Guaranteed to work.</h3>
+        <p class="features-details">Tested and Reliable</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Press -->
+
+  <!-- <section id="press">
+
+  </section> -->
+
+
+  <!-- Pricing -->
+
+  <section id="pricing  ">
+
+
+    <div class="row">
+
+      <div class="col-lg-6 model_img shadow">
+        <div>
+          <img class="model_img_pic " src="{{url_for('static', filename='images/rustlf.jpg')}}" alt="leaf">
+
+        </div>
+      </div>
+
+      <div class=" col-lg-6 model_des shadow">
+        <h1 class="model_des_title">Why do we need GlowGreen?</h1><br />
+        <p class="model_des_text">
+        Existing methods of plant disease detection require
+        environmentalists and forest-workers to solicit
+        the help of government-funded experts
+        to visually inspect and diagnose the infested leaf diseases.</p><br>
+        <p class="model_des_text">
+        This makes the job labor-intensive, time consuming and costly.
+        As an added challenge, effective solutions for concerned people
+        must perform well under significant constraints, since people may
+        only have access to mobile-quality cameras with low-bandwidth.</p><br>
+        <p class="model_des_text">
+        GlowGreen is built keeping in these factors in mind and aims to increase
+        the scale of disease identification in forests.
+        </p>
+
+        </p>
+        </div>
+      </div>
+
+      <!-- <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="w-100 btn btn-lg btn-dark">Sign Up</button>
+          </div>
+        </div>
+      </div> -->
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3>Test your plant on GlowGreen today! </h3>
+    <a href="/inference"><button type="button" class="btn btn-lg btn-dark cta-button"><i class="fa-regular fa-clock" ></i></i> Real Time Inference</button>
+    <a href="https://share.streamlit.io/hemanthsai7/singleinference-1/main/app.py" target="_blank">
+      <button type="button" class="btn btn-lg btn-light cta-button"> <i class="fa-solid fa-images"></i> Insert Image</button>
+    </a>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/Glow-Green" target="_blank">
+      Github
+    </a>
+    <p class="footer-details">© Copyright 2022 GlowGreen</p>
+
+  </footer>
+
+
+</body>
+
+</html>
