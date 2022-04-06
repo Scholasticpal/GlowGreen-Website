@@ -1,0 +1,6 @@
+Flask
+opencv-contrib-python-headless
+tflite_support
+numpy
+tensorflow-cpu
+Gunicorn
